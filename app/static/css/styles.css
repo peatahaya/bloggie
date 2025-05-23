@@ -1,0 +1,129 @@
+/* Reset default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1A1A1A;
+    padding: 15px 20px;
+}
+
+.navbar-brand, .nav-link {
+    color: #FFFFFF !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #CCCCCC !important;
+}
+
+.navbar-toggler {
+    border-color: #FFFFFF;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Flash messages */
+.alert-info {
+    background-color: #333333;
+    border-color: #444444;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+/* Form styles */
+form {
+    background-color: #1A1A1A;
+    border-radius: 5px;
+}
+
+.form-control {
+    background-color: #222222;
+    border: 1px solid #444444;
+    color: #FFFFFF;
+}
+
+.form-control:focus {
+    background-color: #222222;
+    border-color: #666666;
+    color: #FFFFFF;
+    box-shadow: none;
+}
+
+.form-label {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.form-check-label {
+    color: #FFFFFF;
+}
+
+.text-danger {
+    color: #FF5555 !important;
+}
+
+.btn-primary {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #CCCCCC;
+}
+
+/* Card styles (index page) */
+.card {
+    background-color: #1A1A1A;
+    border: 1px solid #444444;
+    color: #FFFFFF;
+}
+
+.card-body p {
+    margin: 0;
+}
+
+.card-body b {
+    font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+}
